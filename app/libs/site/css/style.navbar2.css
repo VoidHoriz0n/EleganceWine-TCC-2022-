@@ -1,0 +1,56 @@
+/** Estilização da barra de navegação  */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+:root {
+	--wine-font-size: 13px;
+	--wine-light-blue: #810000;
+	--wine-color-text: #000;
+	--wine-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	--wine-color-button: #09f;
+	--wine-dark-text: #555;
+}
+
+
+body {
+	margin: auto;
+	font-family: var(--wine-font-family);
+}
+
+.navbar, .navbar-expand-lg {
+	padding: 10px 20px;
+	font-size: var(--wine-font-size);
+	font-family: var(--wine-font-family);
+	background: var(--wine-light-blue) !important;
+}
+
+.navbar-expand-lg .nav-link {
+	color: #fff;
+}
+
+
+.right-items {
+	margin-left: auto;
+}
+
+.links-in-the-right {
+	display: flex;
+	margin-left: auto !important;
+}
+/* ------------ */
+
+.wine-subnav {
+	line-height: 1.0;
+	font-size: 12px;
+	padding: 6px 0px;
+	width: 100%;
+	background: var(--wine-light-blue);
+}
+
+.wine-subnav a {
+	padding: 6px 10px;
+	color: #fff;
+}
+
+.wine-subnav a:hover {
+	color: #fff;
+}

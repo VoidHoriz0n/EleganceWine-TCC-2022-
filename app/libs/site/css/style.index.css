@@ -1,0 +1,657 @@
+/* Hidden the overflow in the explosion width in the
+ * window...
+
+
+*/
+/*
+body {
+    overflow-x: hidden;
+  }
+*/
+
+#rodape 
+{
+    background-color: #333644;
+    color: white;
+    padding-top: 30px;
+}
+
+#rodape .footer-copyright 
+{
+    background-color: #333333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#rodape .row 
+{
+    margin-bottom: 60px;
+}
+
+#rodape .navbar-brand 
+{
+    margin-top: 45px;
+    height: 65px;
+    color: #1c1b29;
+}
+
+#rodape .footer-copyright p 
+{
+    margin: 10px;
+    color: #ccc;
+}
+
+#rodape ul 
+{
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#rodape h5 
+{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#rodape h2 a
+{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+#rodape a 
+{
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#rodape a:hover,
+#rodape a:focus 
+{
+    text-decoration: none;
+    color: white;
+}
+
+#rodape .social-networks 
+{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#rodape .social-networks a 
+{
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#rodape .social-networks a:hover 
+{
+    text-decoration: none;
+}
+
+#rodape .facebook:hover 
+{
+    color: #0077e2;
+}
+
+#rodape .instagram:hover 
+{
+    color: purple;
+}
+
+#rodape .twitter:hover 
+{
+    color: #00aced;
+}
+
+#rodape .btn 
+{
+    color: white;
+    background-color: #d84b6b;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) 
+{
+    #rodape {
+        text-align: center;
+    }
+}
+
+html
+{
+    height: 100%;
+    /**/
+}
+
+body
+{
+    overflow-x: hidden;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+/**/
+    background-color: #ebeaf1;
+    height: 100vh;
+    /*place-items: center center;*/
+    font-family: 'Poppins',sans-serif;
+}
+
+/**/
+.utils
+{
+    position: relative;
+/*    clip-path: polygon(0 0, 90% 0, 100% 95%, 0 100%);*/
+    size: 12px;
+}
+/**/
+
+
+
+.content
+{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#rodape
+{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+
+
+.btn-outline-success 
+{
+    color: #e70d0d69;
+    border-color: #ff0000;
+  }
+/*card-body https://www.youtube.com/watch?v=nStIu7bHd9c&t=72s*/
+
+.cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+    padding: 30px;
+    grid-gap: 40px;
+}
+.card{
+    background-color: #eddec798;
+    border-radius: 30px;
+    box-shadow: 0 0 30px #edd5b269;
+    /*box-shadow: 0 0 30px rgba(0,0,0,0.18);*/
+}
+.container
+{
+    position: relative;
+    clip-path: polygon(0 0, 90% 0, 100% 95%, 0 100%);
+}
+img
+{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.container:after
+{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.3;
+}
+.card1>.container:after
+{
+    background-image: linear-gradient(
+        135deg,
+        #0000ec73,
+        #fb36f469
+    );
+}
+.card2>.container:after
+{
+    background-image: linear-gradient(
+        135deg,
+        #2bdde39c,
+        #42ffdc83
+    );
+}
+.card3>.container:after
+{
+    background-image: linear-gradient(
+        135deg,
+        #ffac1d75,
+        #f84f1c86
+    );
+}
+
+.card4>.container:after
+{
+    background-image: linear-gradient(
+        135deg,
+        #ffac1d75,
+        #f84f1c86
+    );
+}
+
+.card5>.container:after
+{
+    background-image: linear-gradient(
+        135deg,
+        #ffac1d75,
+        #f84f1c86
+    );
+}
+.details
+{
+    padding: 20px 10px;
+}
+.details>h3
+{
+    color: #4f4f4f;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+.details>p
+{
+    color: #373737;
+    /*color: #a0a0a0;*/
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+
+/* Buttons  */
+
+button, html input[type="button"], input[type="reset"], input[type="submit"],
+.gg-contact-template .gg-view-map-wrapper a,
+.button,
+.btn 
+{
+  padding: 16px 42px;
+  border-radius: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: var(--body-font);
+  font-weight: bold;
+  line-height: normal;
+  font-style: normal;
+  text-align: center;
+  box-shadow: none;
+  outline: none;
+  border: 0;
+
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -ms-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+
+/*Primary button*/
+button, html input[type="button"], input[type="reset"], input[type="submit"],
+.gg-contact-template .gg-view-map-wrapper a,
+.button,
+.btn-primary 
+{
+    color: #fff;
+    background-color: #810000;
+}
+
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.gg-contact-template .gg-view-map-wrapper a:hover,
+.button:hover,
+.btn-primary:hover,
+.gg-contact-template .gg-view-map-wrapper a:focus,
+.button:focus,
+.btn-primary:focus 
+{
+    color: #fff;
+    background-color: #373737;
+    border:0;
+    box-shadow: none;
+    outline: none;
+}
+
+
+
+/*-------------------------- Start Home page Service CMS Block -------------------------------*/
+
+#ctservicecmsblock 
+{
+     clear: both;
+     margin: 0px;
+     padding: 40px 0 70px;
+     width: 100%;
+     float: left;
+     border-bottom: 1px solid #d9d9d9;
+ }
+ #ctservicecmsblock .service_container 
+ {
+     color: #FFF;
+     padding-top: 0px;
+     padding-bottom: 0px;
+     margin: 0px auto;
+ }
+ #ctservicecmsblock .service_container .service-area 
+ {
+     padding:0;
+     float: left;
+     width: 100%;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth 
+ {
+     float: left;
+   /*  width: 25%;*/
+     line-height: 20px;
+     color: #333333;
+     padding: 0px 50px;
+     position:relative;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth.service1 
+ {
+     padding-left: 0;
+     padding-right: 0;
+     width: 24%;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth .service-icon 
+ {
+     /*background: url(../image/capricathemes/service-icon.png) no-repeat scroll;*/
+     float: left;
+     margin-top: 0px;
+     height: 30px;
+     line-height: 30px;
+     width: 30px;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth .service-icon i.fa 
+ {
+     font-size: 26px;
+     vertical-align: middle;
+     color: #c9ac65;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth.service1 .icon1 
+ {
+     background-position:center 2px;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth.service1:hover .icon1 
+ {
+     background-position: center -153px;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth.service2 .icon2 
+ {
+     background-position: center -309px;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth.service2:hover .icon2 
+ {
+     background-position: center -464px;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth.service3 .icon3 
+ {
+     background-position: center -620px;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth.service3:hover .icon3 
+ {
+     background-position: center -775px;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth.service4 .icon4 
+ {
+     background-position: center -930px;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth.service4:hover .icon4 
+ {
+     background-position: center -1085px;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth .service-content 
+ {
+     margin-left: 40px;
+     text-align: left;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth .service-content .service-heading 
+ {
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 22px;
+     color: #000;
+     letter-spacing: 0.6px;
+     text-transform: capitalize;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth .service-content .service-description 
+ {
+     font-size: 12px;
+     font-weight: 300;
+     color: #888888;
+     letter-spacing: 0.5px;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth:hover .service-content .service-heading 
+ {
+     color:#c9ac65;
+ }
+ #ctservicecmsblock .service_container .service-area .service-fourth.service4 
+ {
+     padding-right: 0;
+     width: 18%;
+ }
+
+/* content */
+#contentv 
+{
+	min-height: 600px;
+	padding-top: 0px;   
+	padding-bottom: 20px;
+    background-color: #fff;
+} 
+
+
+.bg-vinho 
+{
+    background-color: #800000;
+  }
+  
+
+
+/*-------------------------- Produtos da Home -------------------------------*/
+/* E-commerce */
+.product-box 
+{
+    padding: 0;
+    border: 1px solid #e7eaec;
+  }
+  .product-box:hover,
+  .product-box.active 
+  {
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 3px 7px 0 #a8a8a8;
+    -moz-box-shadow: 0 3px 7px 0 #a8a8a8;
+    box-shadow: 0 3px 7px 0 #a8a8a8;
+  }
+  .product-imitation 
+  {
+    text-align: center;
+    padding: 90px 0;
+    background-color: #f8f8f9;
+    color: #bebec3;
+    font-weight: 600;
+  }
+  .cart-product-imitation 
+  {
+    text-align: center;
+    padding-top: 30px;
+    height: 80px;
+    width: 80px;
+    background-color: #f8f8f9;
+  }
+  .product-imitation.xl 
+  {
+    padding: 120px 0;
+  }
+  .product-desc 
+  {
+    padding: 20px;
+    position: relative;
+  }
+  .ecommerce .tag-list 
+  {
+    padding: 0;
+  }
+  .ecommerce .fa-star 
+  {
+    color: #d1dade;
+  }
+  .ecommerce .fa-star.active 
+  {
+    color: #f8ac59;
+  }
+  .ecommerce .note-editor 
+  {
+    border: 1px solid #e7eaec;
+  }
+  table.shoping-cart-table 
+  {
+    margin-bottom: 0;
+  }
+  table.shoping-cart-table tr td 
+  {
+    border: none;
+    text-align: right;
+  }
+  table.shoping-cart-table tr td.desc,
+  table.shoping-cart-table tr td:first-child 
+  {
+    text-align: left;
+  }
+  table.shoping-cart-table tr td:last-child 
+  {
+    width: 80px;
+  }
+  .product-name 
+  {
+    font-size: 16px;
+    font-weight: 600;
+    color: #676a6c;
+    display: block;
+    margin: 2px 0 5px 0;
+  }
+  .product-name:hover,
+  .product-name:focus 
+  {
+    color: #1ab394;
+  }
+  .product-price 
+  {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #1ab394;
+    padding: 6px 12px;
+    position: absolute;
+    top: -32px;
+    right: 0;
+  }
+  .product-detail .ibox-content 
+  {
+    padding: 30px 30px 50px 30px;
+  }
+  .image-imitation 
+  {
+    background-color: #f8f8f9;
+    text-align: center;
+    padding: 200px 0;
+  }
+  .product-main-price small 
+  {
+    font-size: 10px;
+  }
+  .product-images 
+  {
+    margin: 0 20px;
+  }
+  
+  .ibox 
+  {
+    clear: both;
+    margin-bottom: 25px;
+    margin-top: 0;
+    padding: 0;
+  }
+  .ibox.collapsed .ibox-content 
+  {
+    display: none;
+  }
+  .ibox.collapsed .fa.fa-chevron-up:before 
+  {
+    content: "\f078";
+  }
+  .ibox.collapsed .fa.fa-chevron-down:before 
+  {
+    content: "\f077";
+  }
+  .ibox:after,
+  .ibox:before 
+  {
+    display: table;
+  }
+  .ibox-title 
+  {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ffffff;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 3px 0 0;
+    color: inherit;
+    margin-bottom: 0;
+    padding: 14px 15px 7px;
+    min-height: 48px;
+  }
+  .ibox-content 
+  {
+    background-color: #ffffff;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;
+  }
+  .ibox-footer 
+  {
+    color: inherit;
+    border-top: 1px solid #e7eaec;
+    font-size: 90%;
+    background: #ffffff;
+    padding: 10px 15px;
+  }
